@@ -1,0 +1,12 @@
+{
+    "algorithm-language": "Python",
+    "parameters": {},
+    "description": "",
+    "cloud-id": 21068727,
+    "organization-id": "6e35fa2ab6028f570e58f3e1d24302a0",
+    "python-venv": 1,
+    "encrypted": false,
+    "local-id": 663510192,
+    "debugging": true,
+    "trace-level": "trace"
+}
