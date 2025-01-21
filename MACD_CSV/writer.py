@@ -2,11 +2,14 @@ import json
 import os
 from datetime import datetime
 from yahoo import request_daily_stock_data
+
+symbol = "SMCI"
+
 # Input data
-data = request_daily_stock_data("AAPL")
+data = request_daily_stock_data(symbol)
 
 # Output directory for the formatted data
-output_dir = "custom_data"
+output_dir = "../data/custom_csv_data/"
 os.makedirs(output_dir, exist_ok=True)
 
 csv_data = ""
@@ -25,5 +28,5 @@ for record in data:
     
 
 # Write to JSON file
-with open("final_data.csv", "w") as f:
+with open(f"{output_dir}{symbol}.csv", "w") as f:
     f.write(csv_data)
